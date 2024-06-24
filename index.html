@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  </head>
+<body>
+    <header class="color1">
+
+        <div class="header-content col-12">
+          <section class="col-3">
+            
+           <img class="img-logo" src="imagens/logoclube.jfif" alt="" ></section>
+            
+          <section class="col-5 header-menu">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">MENU</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Quem somos</a>
+                    <a class="nav-link" href="#">Localização</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </section>
+        </div>
+
+    </header>
+
+    <main class="color2"> 
+      
+        <div class="grid-container">
+
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagens/clubeboard.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/clubeboard2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/clubeboard3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      
+        <div class="grid-container2">
+
+        <section class="gallery-quem-somos item2">
+          
+          <div class="area-quem-somos">
+            <h1>Quem Somos</h1>  
+            <p>Bem-vindo ao Clube de Jogos BoardGame! Somos uma comunidade apaixonada por jogos de tabuleiro, cartas e RPG, dedicada a reunir entusiastas de todas as idades e níveis de habilidade. Nosso objetivo é proporcionar um ambiente acolhedor e divertido onde todos possam explorar o fascinante mundo dos jogos.</p>
+  
+              <h1>Nossa Missão</h1>
+              <p>Nossa missão é promover a cultura dos jogos de mesa, incentivando a socialização, o desenvolvimento do pensamento estratégico e a criatividade. Acreditamos que os jogos têm o poder de unir as pessoas, criar amizades duradouras e proporcionar momentos inesquecíveis.</p>
+          
+          </div>
+           
+        </section>
+      </div>
+        
+        
+
+
+      <section class="container form-section">
+        <div class="form-content">
+          <div><p>Deseja fazer parte do BoardGame Club?</p></div>
+          <div><p>É só preencher que logo logo entraremos em contato!</p></div>
+          <form action="#" method="post">
+            <input type="text" name="nome" placeholder="Nome*" required>
+            <input type="text" name="whatsapp" placeholder="WhatsApp (ex: +5551111111111)*" required>
+            <input type="date" id="data-nascimento" name="data-nascimento" placeholder="Data de nascimento" required>
+            <textarea name="mensagem" placeholder="Mensagem"></textarea>
+            <button type="submit" onclick="alert('Mensagem Enviada.')">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="color5">
+      <section class="footer-content">
+        <div id="footer-foto"> <img class="img-logo" src="imagens/logoclube.jfif" alt="" height="auto" width="224"> </div>
+
+        <div> 
+          <figure class="transition-all me-3">
+            <img src="imagens/facebook-wood-100.png" alt="facebook" width="49" height="51">
+          </figure>
+          <figure class="transition-all">
+            <img src="imagens/instagram-wood-100.png" alt="instagram" width="49" height="51">
+          </figure>
+          <figure class="transition-all">
+            <img src="imagens/twitter-wood-100.png" alt="twitter" width="49" height="51">
+          </figure>
+        </div>
+        
+        <div>
+           <div><p>Endereço: Av. Venâncio Aires, 93 - Cidade Baixa, Porto Alegre-RS, 90040-191</p></div>
+           <div><p>Telefone: (51)3288-7750</p></div>
+           <div><p>Horário de funcionamento: Seg à Sex: 08:30-18:00</p></div>
+        </div>
+
+        <!-- AQUI VAI O MAP DO GOOGLE -->
+        <div id="mapa-google"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.789916598812!2d-51.218975199999996!3d-30.042884400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951978567e901f85%3A0x419bba8824e42f95!2sAv.%20Ven%C3%A2ncio%20Aires%2C%2093%20-%20Cidade%20Baixa%2C%20Porto%20Alegre%20-%20RS%2C%2090040-191!5e0!3m2!1spt-BR!2sbr!4v1718892926453!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </section>
+
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,453 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+-webkit-font-smothing: antialiased;
+}
+
+html, body {
+    height: 100%; /* Garantir que o body ocupe 100% da altura da página */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+/* INÍCIO DA ÁREA DO HEADER */
+header {
+    display: flex;
+    font-size: 20px;
+}
+
+.navbar{
+    width: auto;
+    border-radius: 10px;
+
+}
+
+.header-content {
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:  "width" 100;
+  align-items: center;
+}
+
+.img-logo {
+    border-radius: 20%;
+    height: auto; 
+    width: auto;
+    padding: 2rem;
+    margin-left: 1rem;
+}
+
+.header-menu {
+    flex-grow: 1;
+}
+
+/* FIM DA ÁREA DO HEADER */
+
+/* INÍCIO DA ÁREA DO MAIN  */
+.grid-container {
+    display: grid;
+    justify-content: center;
+    padding-top: 3.0rem;
+    align-items: start;
+}
+
+.carousel {
+    width: 500px;
+}
+
+.carousel-inner {
+    width: 100%; 
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+}
+
+
+.grid-container2 {
+    background-color: rgba(250, 235, 215, 0.2);
+    margin: 0 auto;
+    width: min(100rem, 100%);
+}
+.grid-container2::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.gallery-quem-somos {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(1, 2fr);
+    margin-top: 5rem;
+    gap: 1.5rem;
+}
+.area-quem-somos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.area-quem-somos {
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+}
+  
+  .area-quem-somos h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .area-quem-somos p {
+    font-size: 1.0em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 5rem;
+}
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .form-content {
+    width: 100%;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-self: center;
+  }
+  
+  .form-content div p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.24);
+  }
+  
+  .form-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-content input, 
+  .form-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .form-content button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  .form-content button:hover {
+    background-color: #0056b3;
+  }
+  
+/* FIM DA ÁREA DO MAIN */
+
+/* ÁREA DO FOOTER */
+
+.transition-all {
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+  }
+  .me-3 {
+    margin-right: 1rem !important;
+  }
+
+  /* Estilos gerais para o footer */
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+  }
+  
+  #footer-foto {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #footer-foto .img-logo {
+    width: 100%;
+    max-width: 224px;
+    height: auto;
+  }
+  
+  .footer-content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-content figure {
+    margin: 0 10px;
+  }
+  
+  .footer-content p {
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    margin-top: 20px;
+  }
+
+ /* FIM DA ÁREA DO FOOTER */
+
+ .color1 { background-color: #260101; }
+ .color2 { background-color: rgba(250, 235, 215, 0.5); }
+ .color3 { background-color: #D97236; }
+ .color4 { background-color: #F2BF5E; }
+ .color5 { background-color: #266272; }
+
+
+/* FOR DESKTOP */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {flex: 1 1 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {flex: 1 1 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Estilos para telas menores que 992px (Tablets e Telas de tamanho médio) */
+@media (max-width: 992px) {
+
+    .area-quem-somos {
+      padding: 15px;
+      margin: 15px 0;
+    }
+  
+    .area-quem-somos h1 {
+      font-size: 1.8em;
+    }
+  
+    .area-quem-somos p {
+      font-size: 1.1em;
+    }
+    .img-logo{
+        width: 200px;
+    }
+
+    .col-3 {width: 40%;}
+    .col-5 {width: 60%;}
+  }
+  
+  /* Estilos para telas menores que 768px (Telefones e Telas pequenas) */
+  @media (max-width: 768px) {
+    .area-quem-somos {
+      padding: 10px;
+      margin: 10px 0;
+    }
+  
+    .area-quem-somos h1 {
+      font-size: 1.5em;
+    }
+  
+    .area-quem-somos p {
+      font-size: 1em;
+    }
+
+    .form-content div p {
+        font-size: 1em;
+      }
+    
+      .form-content input, 
+      .form-content textarea {
+        font-size: 0.9em;
+      }
+    
+      .form-content button {
+        font-size: 1em;
+      }
+
+      .img-logo {
+        width: 180px;
+      }
+     
+      .col-3 {width: 50%;}
+    .col-5 {width: 50%;}
+  }
+  
+  /* Estilos para telas menores que 576px (Telefones muito pequenos) */
+  @media (max-width: 576px) {
+    .area-quem-somos {
+      padding: 5px;
+      margin: 5px 0;
+    }
+  
+    .area-quem-somos h1 {
+      font-size: 1.2em;
+    }
+  
+    .area-quem-somos p {
+      font-size: 0.9em;
+    }
+
+    .form-content {
+        padding: 15px;
+      }
+    
+      .form-content div p {
+        font-size: 0.9em;
+      }
+      
+      .img-logo {
+        width: 156px;
+      }
+      .col-3 {width: 50%;}
+    .col-5 {width: 50%;}
+  }
+
+  @media (max-width: 1100px), (max-width:1003px) {
+    .header-content {
+        justify-content: space-between;
+          font-weight: 100;
+          font-size: 15px;
+       align-items: center;
+    }
+    .header-menu{
+        margin-right: 50px;
+    }
+  }
+  /* Estilos para telas menores que 992px (Tablets e Telas de tamanho médio) */
+@media (max-width: 992px) {
+    .img-logo {
+      max-width: 200px; /* Ajustar altura máxima */
+    }
+  
+    .header-menu {
+      margin-left: 30px;
+    }
+  
+    .carousel-inner img {
+      max-height: 400px;
+    }
+
+    .header-content{ 
+        justify-content: space-between;
+    }
+  }
+  
+  /* Estilos para telas menores que 768px (Telefones e Telas pequenas) */
+  @media (max-width: 768px) {
+    .img-logo {
+      max-width: 180px; /* Ajustar altura máxima */
+    }
+  
+    .header-menu {
+      margin-left: 30px;
+    }
+  
+    .carousel-inner img {
+      max-height: 300px;
+    }
+    .header-content{
+        justify-content: space-between;
+    }
+  }
+  
+  /* Estilos para telas menores que 576px (Telefones muito pequenos) */
+  @media (max-width: 576px) {
+    .img-logo {
+      max-width: 160px; /* Ajustar altura máxima */
+      margin-right: 10rem;
+    }
+  
+    .header-menu {
+      margin-left: 30px;
+    }
+  
+    .carousel-inner img {
+      max-height: 250px;
+    }
+    .header-content{
+        justify-content: space-between;
+    }
+  }
+
+
+
+  /* MEDIAS DO FOOTER */
+  /* Estilos para telas menores que 768px (Tablets e Telas pequenas) */
+
+ 
+  @media (max-width: 992px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+      
+      }
+      #footer-foto .img-logo{
+        max-width: 200px;
+      }
+  }
+  @media (max-width: 768px) {
+    #footer-foto .img-logo{
+        max-width: 180;
+      }
+    
+    iframe {
+      height: 300px;
+    }
+    
+  }
+  
+  /* Estilos para telas menores que 576px (Telefones muito pequenos) */
+  @media (max-width: 576px) {
+    .footer-content {
+      padding: 10px;
+      
+    }
+    #footer-foto .img-logo{
+        max-width: 160;
+        margin-left: 150px;
+      }
+  
+    iframe {
+      height: 250px;
+    }
+  }
